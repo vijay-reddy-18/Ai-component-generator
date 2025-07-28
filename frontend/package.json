@@ -6,6 +6,9 @@
     "dev": "npx next dev -p 3000",
     "build": "next build",
     "start": "npx next start -p 3000",
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
     "lint": "next lint"
   },
   "dependencies": {
