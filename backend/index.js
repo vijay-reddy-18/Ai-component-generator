@@ -70,7 +70,7 @@ const upload = multer({
 app.use('/uploads', express.static('uploads'));
 
 // MongoDB connection
-mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost:27017/ai-component-generator', {
+mongoose.connect(process.env.MONGODB_URI || 'mongodb+srv://vijay5094:Vijay%405094@cluster0.v35re.mongodb.net/Aibot?retryWrites=true&w=majority&appName=Cluster0', {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 })
