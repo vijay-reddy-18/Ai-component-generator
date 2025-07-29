@@ -10,11 +10,7 @@
       "src": "/api/(.*)",
       "dest": "http://localhost:5000/api/$1"
     },
-    {
-  "buildCommand": "npm run build",
-  "outputDirectory": ".next",
-  "framework": "nextjs"
-},
+   
     {
       "src": "/(.*)",
       "dest": "/frontend/$1"
