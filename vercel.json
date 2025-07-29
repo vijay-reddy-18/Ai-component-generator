@@ -1,15 +1,19 @@
 {
-  "version": 2,
+  "name": "ai-bot_5094",
   "builds": [
     {
-      "src": "frontend/package.json",
+      "src": "frontend/next.config.js",
       "use": "@vercel/next"
     }
   ],
   "routes": [
     {
+      "src": "/api/(.*)",
+      "dest": "http://localhost:5000/api/$1"
+    },
+    {
       "src": "/(.*)",
-      "dest": "frontend/$1"
+      "dest": "/frontend/$1"
     }
   ]
 }
